@@ -1,0 +1,81 @@
+/* src/components/TaskBoard.css */
+.task-board {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.task-board:hover {
+  transform: translateY(-5px);
+}
+
+.task-board h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task-board ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-board li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.task-board li:hover {
+  background-color: #f1f1f1;
+}
+
+.task-board li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+}
+
+.task-input input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.task-input input:focus {
+  border-color: #007bff;
+}
+
+.task-input input::placeholder {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.task-input button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+  background-color: #218838;
+}
